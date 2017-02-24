@@ -1,0 +1,37 @@
+UltimoBundle\Entity\Direccion:
+    type: entity
+    table: direccion
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        calle:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+        colonia:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+        delegacion:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+        numero:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

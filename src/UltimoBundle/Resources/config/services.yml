@@ -1,0 +1,4 @@
+services:
+#    ultimo.example:
+#        class: UltimoBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

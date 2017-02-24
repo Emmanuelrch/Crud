@@ -1,0 +1,11 @@
+ultimo_usuario:
+    resource: "@UltimoBundle/Resources/config/routing/usuario.yml"
+    prefix:   /usuario
+
+ultimo_direccion:
+    resource: "@UltimoBundle/Resources/config/routing/direccion.yml"
+    prefix:   /direccion
+
+ultimo_homepage:
+    path:     /
+    defaults: { _controller: UltimoBundle:Default:index }

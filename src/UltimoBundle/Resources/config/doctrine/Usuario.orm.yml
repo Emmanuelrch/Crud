@@ -1,0 +1,46 @@
+UltimoBundle\Entity\Usuario:
+    type: entity
+    table: usuario
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+        apePaterno:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: ape_paterno
+        apeMaterno:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: ape_materno
+        edad:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    manyToOne:
+        direccion:
+            targetEntity: UltimoBundle\Entity\Direccion
+            joinColumn:
+                name: direccion
+                referencedColumn: id           
+    lifecycleCallbacks: {  }
+

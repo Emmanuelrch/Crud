@@ -1,0 +1,11 @@
+<?php
+
+namespace UltimoBundle\Entity;
+
+/**
+ * Usuario
+ */
+class Usuario 
+{
+
+}
